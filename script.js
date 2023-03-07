@@ -35,16 +35,19 @@ const determineWinner = (userChoice, computerChoice) => {
         if (userChoice === 'fire') {
             document.getElementById("yourPokemon").src = 'charmander2.png';
             document.getElementById("computerPokemon").src = 'charmander2.png';
+            document.getElementById("announcement").innerHTML = "both pokemon clashed, It's a tie!";
             return "draw";
         }
         if (userChoice === 'water') {
             document.getElementById("yourPokemon").src = 'squirtle2.png';
             document.getElementById("computerPokemon").src = 'squirtle2.png';
+            document.getElementById("announcement").innerHTML = "both pokemon clashed, It's a tie!";
             return "draw";
         }
         if (userChoice === 'grass') {
             document.getElementById("yourPokemon").src = 'bulbasaur2 (1).png';
             document.getElementById("computerPokemon").src = 'bulbasaur2 (1).png';
+            document.getElementById("announcement").innerHTML = "both pokemon clashed, It's a tie!";
             return "draw";
         }
     }
